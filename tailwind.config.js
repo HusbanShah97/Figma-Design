@@ -7,34 +7,32 @@ module.exports = {
   ],
   theme: {
     extend: {
-  
       width: {
-        custom: '1440px',
-        custom2: '1322px',
-        heading1: '187px',
-        '815px' : '815px'
+        1440: '1440px',
+        1322: '1322px',
+        187: '187px',
+        152 : '152',
       },
 
       height: {
-        custom: '1132px',
-        custom2: '91px',
-        heading1: '58px',
-        18 :'58px',
+        1132 : '1132px',
+        91 : '91px',
+        58 : '58px',
+        32 : '32px'
       },
-
-      padding: {
-        top: '-590px',
-        left : '-720px'
-      },
-
+  
       margin: {
-        top: '17px',
-        left: '136px',
-        13 : '16px',
-        33 : '364px',
+        136: '136px',
+        17: '17px',
+        
+      },
+      
+      padding: {
+        59 : '59px',
+        590: '-590px',
+        720 : '-720px',
         
       }
-
     },
   },
   plugins: [],

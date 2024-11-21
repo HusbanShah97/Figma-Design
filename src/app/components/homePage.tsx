@@ -1,34 +1,34 @@
 import Link from 'next/link';
 export default function HomePage() {
-    
+
     return (
         
-        <div  className="h-custom w-custom bg-blue-950 pt-top pl-left">
-            <div id='Nav' className='bg-black w-custom2 h-custom2'>
+        <div id='Home' className='w-1440 h-1132 pt-590 pl-720 bg-blue-950 '>
+
+            <div id='Contianer' className='w-1322 h-91 bg-green-800'>
+                <nav className='w-1440 h-1132 '>
+                <div className='w-187 h-58   pt-10'>
+                          <h1 className=''>HusbanTech</h1>
+                    </div>
+                  
+    
+                    <div>
+                        <ul className='flex justify-center pt-10 gap-5'>
+                            <li><Link href={'/'}>Home</Link></li>
+                            <li><Link href={'/'}>Product</Link></li>
+                            <li><Link href={'/'}>Pricing</Link></li>
+                            <li><Link href={'/'}>Contact</Link></li>
+                        </ul>
+                    </div>
+
+
+                </nav>
                 
-                <div className='w-heading1 h-heading1 mt-top ml-left'>
-                    <h1>HusbanTech</h1> 
-                </div>
-                
-                <div className='mt-13 ml-33 h-18 w-815px3'>
-                    
-                <div>
-                    <ul className='flex'>
-                        <li><Link href={'/'}>Home</Link></li>
-                        <li><Link href={'/product'}>Product</Link></li>
-                        <li><Link href={'/pricing'}>Pricing</Link></li>
-                        <li><Link href={'/contact'}>Contact</Link></li>
-                    </ul>
-                    
-                </div>
-                
-                <div className='flex justify-end'>
-                 <button type='button'>Login</button>    
-                 <button type='button'>JOIN US</button>    
-                </div>
-                </div>
-            </div>
-            
+           </div>
+
+
         </div>
+
     )
-}
+    
+  }
