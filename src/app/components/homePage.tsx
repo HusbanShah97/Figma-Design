@@ -1,36 +1,54 @@
+import MainContent from './mainContent';
 import Link from 'next/link';
 export default function HomePage() {
 
     return (
-        
-        <div id='Home' className='w-1440 h-1132 pt-590 pl-720 bg-blue-950 '>
-
-            <div id='Contianer' className='w-1322 h-91 bg-green-800 ml-14'>
-                <div className=' w-187 h-58 ml-24 pt-10'>
-                    <h1 className='text-2xl'>HusbanTech</h1>
-                </div>
+        <div>
+            <div id='Home' className='w-[1440px] h-[1132px] pt-[-590px] pl-[-720px] bg-[#252B42]'>
+           
+                <div id='Navbar' className='w-[1322px] h-[91px] flex  ml-[90px] '>
+                    <div className='ml-[120px] my-7'>
+                        <h1 className='text-2xl font-bold'>BrandName</h1>
+                    </div>
+                    
                 
-                <div className='w-815 h-14 ml-364 mt-4'>
 
-                <section>
-                    <ul className='w-72 flex gap-5 bg-yellow-800 '>
+                    <div>
+                     <ul className='flex my-9 mx-14 gap-8 font-bold'>
                         <li><Link href={'/'}>Home</Link></li>
-                        <li><Link href={'/product'}>Product</Link></li>
                         <li><Link href={'/pricing'}>Pricing</Link></li>
+                        <li><Link href={'/product'}>Product</Link></li>
                         <li><Link href={'/contact'}>Contact</Link></li>
-                    </ul>
-                </section>
+                     </ul>
+                    
+                    </div>   
 
-                <div className='w-48 h-14  gap-12  ml-626 '>
-                    <button type='button'>Login</button>
-                    <button type='button'>JOIN US</button>
+                    <div className='flex items-center mx-[300px] gap-10'>
+
+                        <button>Login</button>
+                        <button className='w-20 h-12 rounded bg-[#23A6F0]'>JOIN US</button>
+                    
+                    </div>
+
+                
                 </div>
+          <MainContent />
+                
 
-                </div>
 
-           </div>
-        </div>
+            
 
+            </div>
+
+                {/* Main Content */}
+
+           
+            {/* <div className='w-[1046px] h-[1028px] bg-red-500'>
+                <h1>husban</h1>
+
+            </div> */}
+
+       </div>
     )
     
   }
